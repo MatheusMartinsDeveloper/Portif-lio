@@ -1,0 +1,30 @@
+@import "../variables";
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: getColor("background", "white");
+    padding-top: 1.5%; 
+    width: 100%;
+
+    div {
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+        background-color: getColor("text", "darkBlue");
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        list-style: none;
+
+        li {
+            color: getColor("text", "lightGray");
+            font: 500 normal 1em $fontSecondary;
+            cursor: pointer;
+        }
+    }
+}
