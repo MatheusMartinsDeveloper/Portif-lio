@@ -1,0 +1,118 @@
+@import "../variables";
+
+.section-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: getColor("background", "white");
+    margin-top: 5%;
+    width: 100%;
+
+    span {
+        color: getColor("text", "lightGray");
+        font: 400 normal 1em $fontSecondary;
+    }
+
+    h1 {
+        color: getColor("text", "veryDarkBlue");
+        font: 700 normal 4em $fontPrimary;
+        text-align: center;
+
+        span {
+            color: getColor("text", "darkBlue");
+            font-weight: 700;
+        }
+    }
+
+    p {
+        color: getColor("text", "gray");
+        font: 500 normal 1.2em $fontPrimary;
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        margin-top: 3%;
+        width: 100%;
+
+        button:nth-child(1) {
+            position: relative;
+            color: getColor("text", "gray");
+            font: 500 normal 1em $fontPrimary;
+            background-color: getColor("background", "white");
+            border: 1.5px solid getColor("text", "lightGray");
+            border-radius: 50px;
+            padding: 0.5em;
+            width: 10%;
+            cursor: pointer;
+            overflow: hidden;
+
+            span {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                z-index: 2;
+            }
+
+            svg {
+                font: 500 normal 1.4em $fontPrimary;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: getColor("text", "darkBlue");
+                transform: translateY(100%);
+                transition: all 0.5s ease;
+                z-index: 0;
+            }
+
+            &:hover::after {
+                transition: all 0.5s ease;
+                transform: translateY(-80%);
+            }
+
+            &:hover {
+                span {
+                    color: getColor("text", "white");
+                }
+            }
+        }
+
+        button:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            color: getColor("text", "white");
+            font: 500 normal 1em $fontPrimary;
+            background-color: getColor("text", "darkBlue");
+            border: 1.5px solid getColor("text", "lightGray");
+            border-radius: 50px;
+            padding: 0.5em;
+            width: 10%;
+            cursor: pointer;
+
+            svg {
+                font: 500 normal 1em $fontPrimary;
+                transform: rotate(50deg);
+                transition: all 0.5s ease
+            }
+
+            &:hover svg {
+                transition: all 0.5s ease;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
