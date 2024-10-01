@@ -11,6 +11,7 @@ export default function SectionHero() {
                 <button><span>Download CV <MdOutlineFileDownload /></span></button>
                 <button>Contato <FaArrowUp /></button>
             </div>
+            <div className="line"></div>
         </section>
     );
 }

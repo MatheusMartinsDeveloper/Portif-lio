@@ -1,0 +1,14 @@
+@import "../variables";
+
+.section-about {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .div-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+}
