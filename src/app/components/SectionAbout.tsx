@@ -10,7 +10,7 @@ export default function SectionAbout() {
                     <span>Sobre Mim</span>
                 </div>
                 <div className="div-title">
-                    <h1> Eu sou <div></div> Matheus Martins. <br /> Um Desenvolvedor FullStack</h1>
+                    <h1> Eu sou <span></span> Matheus Martins. <br /> Um Desenvolvedor FullStack</h1>
                 </div>
                 <div className="div-paragraph">
                     <p>Eu vivo no estado de São Paulo, Brasil, eu tenho 19 anos de idade. Eu estudo Sistemas de Informação <br />
@@ -21,16 +21,19 @@ export default function SectionAbout() {
                 </div>
                 <div className="div-container-card">
                     <CardSectionAbout
-                        icon={<FaCode />}
+                        icon={<FaCode className="icon" />}
                         title={`Front End`}
-                        paragraph={<>Traduzo designs em código utilizando diversas tecnologias, <br />
-                        além de criar micro interações e garantir visibilidade em diferentes telas.</>}
+                        paragraph={<>Traduzo designs em código utilizando diversas <br />
+                        tecnologias, além de criar micro interações <br />
+                        e garantir visibilidade em diferentes telas.</>}
                     />
                     <CardSectionAbout
-                        icon={<LuServer />}
+                        icon={<LuServer className="icon" />}
                         title={`Back End`}
-                        paragraph={<>Construo a estrutura do sistema, gerenciando dados e funcionalidades de forma eficiente. <br />
-                        Minha codificação robusta e testes rigorosos garantem um desempenho confiável, permitindo que a interface brilhe. </>}
+                        paragraph={<>Construo a estrutura do sistema, gerenciando dados <br />
+                        e funcionalidades de forma eficiente. Minha codificação <br />
+                        robusta e testes rigorosos garantem um desempenho <br />
+                        confiável, permitindo que a interface brilhe. </>}
                     />
                 </div>
             </div>

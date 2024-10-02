@@ -9,7 +9,7 @@ export default function CardSectionAbout({ icon, title, paragraph }: CardSection
     return (
         <div className="div-card">
             <div>
-                {icon}
+                <div className="div-icon">{icon}</div>
                 <h2>{title}</h2>
                 <p>{paragraph}</p>
             </div>
