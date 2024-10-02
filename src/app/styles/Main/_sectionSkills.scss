@@ -1,0 +1,85 @@
+@import "../variables";
+
+.section-skills {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .div-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 60%;
+
+        .div-span span {
+            color: getColor("text", "darkBlue");
+            font: 500 1em $fontSecondary;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            border: 0.5px solid getColor("text", "lightGray");
+            border-radius: 35px;
+            padding: 10px;
+        }
+
+        .div-title h1 {
+            color: getColor("text", "veryDarkBlue");
+            font: 700 normal 3.5em $fontPrimary;
+        }
+
+        .div-container-second {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .div-container-paragraph {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                width: 40%;
+
+                p {
+                    color: getColor("text", "gray");
+                    font: 500 normal 1.2em $fontSecondary;
+                }
+            }
+
+            .div-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2em;
+                width: 50%;
+
+                .div-container-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 2em;
+                    width: 100%;
+
+                    h2 {
+                        color: getColor("text", "gray");
+                        font: 600 normal 1.5em $fontPrimary;
+                    }
+
+                    div {
+                        display: flex;
+                        gap: 1em;
+                        flex-wrap: wrap;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .line {
+        margin-top: 10%;
+        background-color: getColor("line", "gray");
+        width: 100%;
+        height: 3px;
+    }
+}

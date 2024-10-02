@@ -1,0 +1,11 @@
+@import "../variables";
+
+.span-component {
+    color: getColor("text", "darkBlue");
+    font: 500 1em $fontSecondary;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 0.5px solid getColor("text", "lightGray");
+    border-radius: 35px;
+    padding: 10px;
+}

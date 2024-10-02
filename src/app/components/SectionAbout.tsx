@@ -37,6 +37,7 @@ export default function SectionAbout() {
                     />
                 </div>
             </div>
+            <div className="line"></div>
         </section>
     )
 }
