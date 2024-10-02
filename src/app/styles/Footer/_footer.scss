@@ -1,0 +1,54 @@
+@import "../variables";
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .div-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        padding-bottom: 3.5em;
+
+        .div-span span {
+            color: getColor("text", "veryDarkBlue");
+            font: 700 normal 1em $fontPrimary;
+        }
+
+        .div-span-second span {
+            color: getColor("text", "gray");
+            font: 600 normal 1.2em $fontSecondary;
+
+            .icon {
+                color: getColor("text", "veryDarkBlue");
+            }
+        }
+
+        .div-span-third {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: getColor("text", "white");
+                font-size: 1.5em;
+                background-color: getColor("text", "darkBlue");
+                border-radius: 100%;
+                width: 2em;
+                height: 2em;
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transition: all 0.5s ease;
+                    transform: scale(120%);
+                }
+            }
+        }
+    }
+}
