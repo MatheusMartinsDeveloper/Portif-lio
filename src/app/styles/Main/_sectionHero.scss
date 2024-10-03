@@ -16,6 +16,7 @@
     }
 
     h1 {
+        position: relative;
         color: getColor("text", "veryDarkBlue");
         font: 700 normal 4em $fontPrimary;
         text-align: center;
@@ -23,6 +24,27 @@
         span {
             color: getColor("text", "darkBlue");
             font-weight: 700;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(to left, getColor("text", "gray"), getColor("text", "darkBlue"), getColor("text", "veryDarkBlue"));
+            border-radius: 5px;
+            width: 80%;
+            height: 10px;
+            animation: slideIn 1s ease forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0%);
+            }
         }
     }
 
