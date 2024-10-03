@@ -4,7 +4,7 @@ import { LuServer } from "react-icons/lu";
 
 export default function SectionAbout() {
     return (
-        <section className="section-about">
+        <section className="section-about" id="sobre">
             <div className="div-container">
                 <div className="div-span">
                     <span>Sobre Mim</span>

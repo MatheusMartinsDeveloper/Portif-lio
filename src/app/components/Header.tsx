@@ -5,10 +5,10 @@ export default function Header() {
             <div></div>
             <nav>
                 <ul>
-                    <li>Sobre</li>
-                    <li>Projetos</li>
-                    <li>Habilidades</li>
-                    <li>Contato</li>
+                    <li><a href="#sobre" data-text="Sobre">Sobre</a></li>
+                    <li><a href="#projetos" data-text="Projetos">Projetos</a></li>
+                    <li><a href="#habilidades" data-text="Habilidades">Habilidades</a></li>
+                    <li><a href="#contato" data-text="Contato">Contato</a></li>
                 </ul>
             </nav>
         </header>

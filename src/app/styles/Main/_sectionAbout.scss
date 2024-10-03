@@ -1,11 +1,11 @@
 @import "../variables";
 
 .section-about {
-    margin-top: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
     width: 100%;
 
     .div-container {

@@ -22,9 +22,30 @@ header {
         list-style: none;
 
         li {
-            color: getColor("text", "lightGray");
-            font: 500 normal 1em $fontSecondary;
-            cursor: pointer;
+
+            a {
+                position: relative;
+                color: getColor("text", "lightGray");
+                font: 500 normal 1em $fontSecondary;
+                cursor: pointer;
+                overflow: hidden;
+                transition: all 0.5s ease;
+
+                &::after {
+                    content: attr(data-text);
+                    position: absolute;
+                    left: 0;
+                    transform: translateY(100%);
+                    color: getColor("text", "darkBlue");
+                    opacity: 0;
+                }
+
+                &:hover::after {
+                    transition: all 0.5s ease;
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+            }
         }
     }
 }

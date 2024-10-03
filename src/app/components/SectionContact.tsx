@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function SectionContact() {
     return (
-        <section className="section-contact">
+        <section className="section-contact" id="contato">
             <div className="div-container">
                 <div className="div-span">
                     <Span name="contato" />

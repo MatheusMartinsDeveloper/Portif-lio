@@ -9,7 +9,7 @@ export default function SectionHero() {
             <p>Mesclar os melhores elementos de frontend e backend para forjar <br /> experiências inovadoras para o usuário.</p>
             <div>
                 <button><span>Download CV <MdOutlineFileDownload /></span></button>
-                <button>Contato <FaArrowUp /></button>
+                <a href="#contato">Contato <FaArrowUp /></a>
             </div>
             <div className="line"></div>
         </section>

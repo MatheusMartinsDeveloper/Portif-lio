@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @import "variables";
 @import "./components/span";
 @import "./Header/header";

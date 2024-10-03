@@ -3,7 +3,7 @@ import Span from "./Span";
 
 export default function SectionSkills() {
     return (
-        <section className="section-skills">
+        <section className="section-skills" id="habilidades">
             <div className="div-container">
                 <div className="div-span">
                     <span>Habilidades</span>

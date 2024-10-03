@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function SectionProjects() {
     return (
-        <section className="section-projects">
+        <section className="section-projects" id="projetos">
             <div className="div-container">
                 <div className="div-span">
                     <span>Projetos</span>
