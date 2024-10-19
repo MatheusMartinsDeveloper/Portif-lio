@@ -21,7 +21,7 @@ export default function SectionContact() {
                 </div>
                 <div className="div-contact">
                     <a target="_blank" href="https://www.linkedin.com/in/matheus-martins-7631571a1/"><span><FaLinkedinIn className="icon" /> Linkedin</span></a>
-                    <a target="_blank" href="https://github.com/dashboard"><span><FaGithub className="icon" /> Github</span></a>
+                    <a target="_blank" href="https://github.com/MatheusMartinsDeveloper"><span><FaGithub className="icon" /> Github</span></a>
                     <a target="_blank" href=""><span><SiGmail className="icon" /> G-mail</span></a>
                 </div>
             </div>

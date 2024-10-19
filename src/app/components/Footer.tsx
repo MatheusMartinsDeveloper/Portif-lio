@@ -15,7 +15,7 @@ export default function Footer() {
                 </div>
                 <div className="div-span-third">
                     <a href="https://www.linkedin.com/in/matheus-martins-7631571a1/" target="_blank"><FaLinkedinIn /></a>
-                    <a href="https://github.com/dashboard" target="_blank"><FaGithub /></a>
+                    <a href="https://github.com/MatheusMartinsDeveloper" target="_blank"><FaGithub /></a>
                     <a href="" target="_blank"><SiGmail /></a>
                 </div>
             </div>
